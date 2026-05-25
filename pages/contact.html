@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — AustroIndie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+    @media(max-width:768px){ .contact-grid{ grid-template-columns:1fr; gap:40px; } }
+    .form-group { margin-bottom:20px; }
+    .form-label { display:block; font-family:'Cinzel',serif; font-size:9px; letter-spacing:.4em; text-transform:uppercase; color:#8c7b6b; margin-bottom:8px; }
+    .form-input { width:100%; border:1px solid rgba(201,162,78,.3); background:#faf5ec; color:#2a1a0e; padding:14px 16px; font-family:'Raleway',sans-serif; font-size:14px; transition:border-color .2s,box-shadow .2s; }
+    .form-input:focus { outline:none; border-color:#c9a24e; box-shadow:0 0 0 3px rgba(201,162,78,.12); }
+    .form-textarea { resize:vertical; min-height:130px; }
+    .info-item { margin-bottom:32px; }
+    .info-label { font-family:'Cinzel',serif; font-size:9px; letter-spacing:.4em; text-transform:uppercase; color:#c9a24e; margin-bottom:6px; }
+    .info-value { font-family:'Playfair Display',serif; font-style:italic; font-size:1.4rem; color:#7a1f2e; text-decoration:none; display:block; }
+    .info-value:hover { color:#c9a24e; }
+    .info-sub { font-family:'Raleway',sans-serif; font-size:13px; color:#8c7b6b; margin-top:4px; }
+  </style>
+</head>
+<body>
+<div id="navPlaceholder"></div>
+
+<div class="page-hero jali-bg" style="padding-top:96px">
+  <div class="collar"></div>
+  <div class="section-wrap page-hero-inner">
+    <p class="breadcrumb"><a href="../index.html">Home</a> &nbsp;/&nbsp; Contact</p>
+    <h1>Contact Us</h1>
+    <p class="hero-sub">Audience with the court — we'd love to hear from you</p>
+  </div>
+</div>
+
+<section style="padding:80px 0">
+  <div class="section-wrap">
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="reveal">
+        <div class="royal-badge" style="margin-bottom:24px">Reach The Palace</div>
+        <div class="info-item">
+          <p class="info-label">WhatsApp</p>
+          <a href="https://wa.me/919999999999" target="_blank" class="info-value">+91 99999 99999</a>
+          <p class="info-sub">Fastest way to place orders</p>
+        </div>
+        <div class="info-item">
+          <p class="info-label">Royal Correspondence</p>
+          <a href="mailto:hello@austroindie.com" class="info-value" style="font-size:1.1rem">hello@austroindie.com</a>
+        </div>
+        <div class="info-item">
+          <p class="info-label">Instagram</p>
+          <a href="https://instagram.com/austroindie" target="_blank" class="info-value" style="font-size:1.1rem">@austroindie</a>
+        </div>
+        <div class="info-item">
+          <p class="info-label">Court Hours</p>
+          <p style="font-family:'Raleway',sans-serif;font-size:15px;color:#2a1a0e;font-weight:500">Monday – Saturday</p>
+          <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#8c7b6b">10:00 AM – 7:00 PM IST</p>
+        </div>
+        <a href="https://wa.me/919999999999?text=Greetings%20from%20AustroIndie!%20I%27d%20like%20to%20place%20an%20order." target="_blank" class="btn-wa" style="max-width:280px">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.528 5.84L.057 23.5l5.797-1.499A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.6-.497-5.11-1.367l-.366-.218-3.44.889.921-3.32-.239-.384A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <!-- Form -->
+      <div class="reveal" style="transition-delay:.15s">
+        <div style="border:1px solid rgba(201,162,78,.2);padding:40px;position:relative;background:#faf5ec">
+          <div style="position:absolute;inset:8px;border:1px solid rgba(201,162,78,.1);pointer-events:none"></div>
+          <div style="position:relative;z-index:1">
+            <h3 style="font-family:'Cinzel',serif;font-size:1rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:28px">Send A Message</h3>
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" id="cName" class="form-input" placeholder="e.g. Priya Müller"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone / WhatsApp</label>
+              <input type="tel" id="cPhone" class="form-input" placeholder="+91 98765 43210"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Your Message</label>
+              <textarea id="cMsg" class="form-input form-textarea" placeholder="Your royal enquiry..."></textarea>
+            </div>
+            <button onclick="sendViaWhatsApp()" class="btn-gold" style="width:100%;text-align:center">Dispatch Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footerPlaceholder"></div>
+<script src="../js/main.js"></script>
+<script>
+  document.getElementById('navPlaceholder').outerHTML = injectNav('Contact');
+  document.getElementById('footerPlaceholder').outerHTML = injectFooter();
+</script>
+</body>
+</html>
