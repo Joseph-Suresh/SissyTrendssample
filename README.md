@@ -28,7 +28,7 @@ austroindie/
 
 > **Keep these private — only share with trusted team members**
 
-- **URL:** `https://YOUR-USERNAME.github.io/austroindie/admin/`
+- **URL:** `https://YOUR-USERNAME.github.io/sissytrendsindia/admin/`
 - **Username:** `austroindie_admin`
 - **Password:** `Imperial@2025`
 
