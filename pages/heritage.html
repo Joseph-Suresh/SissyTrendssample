@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Heritage — AustroIndie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .timeline { position:relative; padding:0; list-style:none; }
+    .timeline::before { content:''; position:absolute; left:50%; top:0; bottom:0; width:1px; background:linear-gradient(to bottom,transparent,#c9a24e,transparent); transform:translateX(-50%); }
+    .timeline-item { display:grid; grid-template-columns:1fr 60px 1fr; gap:0; margin-bottom:56px; align-items:start; }
+    .timeline-item:nth-child(even) .tl-content { grid-column:3; text-align:left; }
+    .timeline-item:nth-child(even) .tl-empty { grid-column:1; }
+    .tl-dot { grid-column:2; display:flex; justify-content:center; padding-top:8px; }
+    .tl-dot-inner { width:14px; height:14px; background:#c9a24e; border:3px solid #faf5ec; box-shadow:0 0 0 1px #c9a24e; border-radius:50%; }
+    .tl-content { background:#faf5ec; border:1px solid rgba(201,162,78,.2); padding:28px; position:relative; }
+    .tl-content::after { content:''; position:absolute; top:16px; width:0; height:0; }
+    .timeline-item:nth-child(odd) .tl-content { grid-column:1; text-align:right; }
+    .timeline-item:nth-child(odd) .tl-content::after { right:-8px; border-top:8px solid transparent; border-bottom:8px solid transparent; border-left:8px solid rgba(201,162,78,.2); }
+    .timeline-item:nth-child(even) .tl-content::after { left:-8px; border-top:8px solid transparent; border-bottom:8px solid transparent; border-right:8px solid rgba(201,162,78,.2); }
+    @media(max-width:768px){
+      .timeline::before { left:24px; }
+      .timeline-item { grid-template-columns:48px 1fr; }
+      .tl-dot { grid-column:1; }
+      .tl-content, .timeline-item:nth-child(odd) .tl-content, .timeline-item:nth-child(even) .tl-content { grid-column:2; text-align:left; }
+      .tl-empty { display:none; }
+      .tl-content::after, .timeline-item:nth-child(odd) .tl-content::after, .timeline-item:nth-child(even) .tl-content::after { display:none; }
+    }
+    .pillar-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    @media(max-width:768px){ .pillar-grid{ grid-template-columns:1fr; } }
+    .values-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:32px; }
+    @media(max-width:768px){ .values-grid{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<div id="navPlaceholder"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero jali-bg" style="padding-top:96px;min-height:420px">
+  <div class="collar"></div>
+  <div class="section-wrap page-hero-inner" style="padding-bottom:64px">
+    <p class="breadcrumb"><a href="../index.html">Home</a> &nbsp;/&nbsp; Heritage</p>
+    <h1>Our Heritage</h1>
+    <p class="hero-sub">Two empires. One vision. Centuries of craft.</p>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section-parchment" style="padding:80px 0">
+  <div class="section-wrap">
+    <div style="max-width:780px;margin:0 auto;text-align:center" class="reveal">
+      <div style="font-size:28px;color:#c9a24e;opacity:.5;letter-spacing:8px;margin-bottom:16px">❦ ❦ ❦</div>
+      <div class="royal-badge" style="margin-bottom:20px">Our Story</div>
+      <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,4vw,3rem);color:#7a1f2e;letter-spacing:.05em;margin-bottom:24px">Two Empires. One Vision.</h2>
+      <p class="cormorant" style="font-style:italic;font-size:1.2rem;line-height:2;color:#8c7b6b;margin-bottom:20px">
+        AustroIndie was born from the friendship of two artisan families — one from the gilded halls of Vienna, the other from the vibrant ateliers of Jaipur.
+      </p>
+      <p style="font-family:'Raleway',sans-serif;font-size:15px;line-height:1.9;color:#8c7b6b;margin-bottom:20px">
+        United by a shared reverence for craftsmanship, we bring you pieces that carry the soul of both imperial courts: the precision of Habsburg goldsmiths and the opulence of Mughal weavers. Every thread, every stone, every brushstroke in our collection tells a story of two worlds meeting in perfect harmony.
+      </p>
+      <div class="filigree" style="max-width:280px;margin:32px auto 0">
+        <div class="filigree-line"></div><span class="filigree-center">✦ ✦ ✦</span><div class="filigree-line"></div>
+      </div>
+      <!-- Dual emblems -->
+      <div style="display:flex;justify-content:center;gap:48px;margin-top:40px">
+        <div style="text-align:center">
+          <div style="width:56px;height:56px;margin:0 auto;border:2px solid rgba(201,162,78,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:10px">🇦🇹</div>
+          <p style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:#8c7b6b">Vienna Atelier</p>
+        </div>
+        <div style="font-family:'Playfair Display',serif;font-size:2rem;color:#c9a24e;opacity:.5;align-self:center">×</div>
+        <div style="text-align:center">
+          <div style="width:56px;height:56px;margin:0 auto;border:2px solid rgba(201,162,78,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:10px">🇮🇳</div>
+          <p style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:#8c7b6b">Jaipur Craft</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THREE PILLARS -->
+<section style="padding:80px 0">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="royal-badge" style="margin-bottom:16px">Our Philosophy</div>
+      <h2>The Three Pillars</h2>
+      <div class="filigree" style="margin-top:20px;max-width:280px;margin-left:auto;margin-right:auto">
+        <div class="filigree-line"></div><span class="filigree-center">♛</span><div class="filigree-line"></div>
+      </div>
+    </div>
+    <div class="pillar-grid">
+      <div style="text-align:center;padding:40px 24px;border:1px solid rgba(201,162,78,.2);background:var(--parchment)" class="reveal" style="transition-delay:.1s">
+        <div style="font-size:2.5rem;margin-bottom:16px">⚜️</div>
+        <h3 style="font-family:'Cinzel',serif;font-size:1rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:12px">IMPERIAL CRAFT</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;line-height:1.8;color:#8c7b6b">Every item is hand-selected for its quality and authenticity, meeting the exacting standards of both Viennese and Jaipuri master artisans.</p>
+      </div>
+      <div style="text-align:center;padding:40px 24px;border:1px solid rgba(201,162,78,.2);background:var(--parchment)" class="reveal" style="transition-delay:.2s">
+        <div style="font-size:2.5rem;margin-bottom:16px">🌸</div>
+        <h3 style="font-family:'Cinzel',serif;font-size:1rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:12px">CULTURAL BRIDGE</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;line-height:1.8;color:#8c7b6b">We celebrate the meeting of two great aesthetic traditions, honouring the cultural heritage of both Austria and India in equal measure.</p>
+      </div>
+      <div style="text-align:center;padding:40px 24px;border:1px solid rgba(201,162,78,.2);background:var(--parchment)" class="reveal" style="transition-delay:.3s">
+        <div style="font-size:2.5rem;margin-bottom:16px">💎</div>
+        <h3 style="font-family:'Cinzel',serif;font-size:1rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:12px">TIMELESS BEAUTY</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;line-height:1.8;color:#8c7b6b">We curate only pieces that transcend trends — heirlooms in the making, designed to be cherished for generations to come.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section-parchment jali-bg" style="padding:80px 0">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="royal-badge" style="margin-bottom:16px">Our Journey</div>
+      <h2>The AustroIndie Story</h2>
+      <div class="filigree" style="margin-top:20px;max-width:280px;margin-left:auto;margin-right:auto">
+        <div class="filigree-line"></div><span class="filigree-center">❧</span><div class="filigree-line"></div>
+      </div>
+    </div>
+    <ul class="timeline" style="max-width:800px;margin:0 auto">
+      <li class="timeline-item reveal">
+        <div class="tl-content">
+          <p style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;color:#c9a24e;margin-bottom:8px">2018</p>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#7a1f2e;margin-bottom:8px">THE FIRST MEETING</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:13px;line-height:1.8;color:#8c7b6b">Two families meet at a global textile fair in Vienna — a Jaipur weaving family and a Viennese goldsmith clan discover their shared passion for heritage craftsmanship.</p>
+        </div>
+        <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+        <div class="tl-empty"></div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+        <div class="tl-content">
+          <p style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;color:#c9a24e;margin-bottom:8px">2020</p>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#7a1f2e;margin-bottom:8px">THE VISION FORMS</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:13px;line-height:1.8;color:#8c7b6b">During the global pause, the two families collaborate remotely — exchanging sketches, fabrics, and gold samples across continents, refining a unique fusion aesthetic.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="tl-content">
+          <p style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;color:#c9a24e;margin-bottom:8px">2022</p>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#7a1f2e;margin-bottom:8px">FIRST COLLECTION</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:13px;line-height:1.8;color:#8c7b6b">The first AustroIndie collection launches in Jaipur — 12 pieces blending Mughal motifs with Habsburg-era filigree techniques. Sells out within a week.</p>
+        </div>
+        <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+        <div class="tl-empty"></div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+        <div class="tl-content">
+          <p style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;color:#c9a24e;margin-bottom:8px">2025</p>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#7a1f2e;margin-bottom:8px">THE DIGITAL PALACE</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:13px;line-height:1.8;color:#8c7b6b">AustroIndie opens its digital boutique — bringing the finest sarees, imitation jewellery, and decorative items to discerning patrons worldwide.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section style="padding:80px 0">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="royal-badge" style="margin-bottom:16px">What We Stand For</div>
+      <h2>Our Values</h2>
+    </div>
+    <div class="values-grid">
+      <div style="display:flex;gap:20px;align-items:flex-start" class="reveal">
+        <div style="font-size:1.5rem;flex-shrink:0;margin-top:4px">♛</div>
+        <div>
+          <h3 style="font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:8px">AUTHENTICITY FIRST</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:14px;line-height:1.8;color:#8c7b6b">Every piece is sourced directly from master artisans. No middlemen, no mass production — only genuine handcraft.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start" class="reveal" style="transition-delay:.1s">
+        <div style="font-size:1.5rem;flex-shrink:0;margin-top:4px">❧</div>
+        <div>
+          <h3 style="font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:8px">ARTISAN WELFARE</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:14px;line-height:1.8;color:#8c7b6b">We pay fair prices to our artisan partners and are committed to sustaining traditional craft communities in both India and Austria.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start" class="reveal" style="transition-delay:.2s">
+        <div style="font-size:1.5rem;flex-shrink:0;margin-top:4px">✦</div>
+        <div>
+          <h3 style="font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:8px">CULTURAL RESPECT</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:14px;line-height:1.8;color:#8c7b6b">We approach cultural exchange with deep respect, always celebrating — never appropriating — the traditions we work with.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start" class="reveal" style="transition-delay:.3s">
+        <div style="font-size:1.5rem;flex-shrink:0;margin-top:4px">❦</div>
+        <div>
+          <h3 style="font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:.15em;color:#7a1f2e;margin-bottom:8px">CONSCIOUS LUXURY</h3>
+          <p style="font-family:'Raleway',sans-serif;font-size:14px;line-height:1.8;color:#8c7b6b">True luxury means lasting quality. We champion slow fashion and timeless décor over disposable trends.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:64px 0;background:#7a1f2e;position:relative;overflow:hidden" class="jali-bg">
+  <div style="position:absolute;inset:0;background:rgba(122,31,46,.88)"></div>
+  <div class="section-wrap" style="text-align:center;position:relative;z-index:2">
+    <div class="crown-divider" style="color:#c9a24e;margin-bottom:20px">♛ &nbsp; ♛</div>
+    <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.5rem,3vw,2.5rem);color:#faf5ec;margin-bottom:16px">Begin Your Royal Journey</h2>
+    <p class="cormorant" style="font-style:italic;font-size:1.1rem;color:rgba(250,245,236,.7);margin-bottom:32px">Discover our curated collections today</p>
+    <a href="collections.html" class="btn-gold">Explore Collections</a>
+  </div>
+</section>
+
+<div id="footerPlaceholder"></div>
+<script src="../js/main.js"></script>
+<script>
+  document.getElementById('navPlaceholder').outerHTML = injectNav('Heritage');
+  document.getElementById('footerPlaceholder').outerHTML = injectFooter();
+</script>
+</body>
+</html>
